@@ -1,0 +1,6 @@
+name: 'test action elastic beanstalk CLI'
+description: 'some testing using the new format. containers are slower on new GH actions compared to the setup-lang format'
+author: 'judge2020'
+runs:
+  using: 'python3'
+  main: 'test.py'
