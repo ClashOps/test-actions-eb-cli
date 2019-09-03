@@ -1,0 +1,10 @@
+on: push
+name: testSecurity
+jobs:
+  doStuff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: echo "doing stuff with env var MYSECRET"
+        env:
+          MYSECRET: ${{ secrets.MYSECRET }}
